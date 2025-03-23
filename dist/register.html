@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>reg Form</title>
+    <title>Registration Form</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="flex justify-center items-center h-screen bg-gray-700 p-4">
@@ -12,7 +12,7 @@
     >
       <h2 class="text-center text-2xl font-bold mb-4">Sign Up</h2>
 
-      <form>
+      <form id="regForm">
         <div class="mb-4">
           <label class="block text-gray-300">Full Name</label>
           <input
@@ -55,17 +55,14 @@
             class="w-full p-2 bg-gray-800 border rounded text-white"
           />
         </div>
-        <button
-          id="btn"
-          class="w-full bg-blue-600 hover:bg-blue-700 p-2 rounded"
-        >
-          Sign Up
-        </button>
+        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 p-2 rounded">Sign Up</button>
       </form>
 
       <p class="text-center mt-4 text-gray-400">
-        Already have an account? <a href="#" class="text-blue-400">Login</a>
+        Already have an account? <a href="login.html" class="text-blue-400">Login</a>
       </p>
     </div>
+
+    <script src="../src/registration.js"></script>
   </body>
 </html>
