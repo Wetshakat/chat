@@ -41,11 +41,12 @@ document.addEventListener("DOMContentLoaded", () => {
         messages.forEach(msg => displayMessage(msg.text, msg.sender));
     }
     
+   
     function getChatKey(user1, user2) {
         return [user1, user2].sort().join("-");
     }
     
-    /
+    
     function displayMessage(text, sender) {
         const msgDiv = document.createElement("div");
         msgDiv.innerHTML = `<strong>${sender}:</strong> ${text}`;
@@ -61,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
         chatBox.scrollTop = chatBox.scrollHeight;
     }
     
-   
+    
     sendButton.addEventListener("click", () => {
         const message = messageInput.value.trim();
         const recipient = localStorage.getItem("currentChat");
@@ -86,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     document.getElementById("logout").addEventListener("click", logout);
     
-   
+    
     checkAuth();
     loadContacts();
 });
